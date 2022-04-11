@@ -3,6 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import Footer from "../components/footer/footer";
+import Banner from "../components/comp_public/banner";
 
 const Layout = ({children}) => {
     return (
@@ -31,8 +33,12 @@ const Layout = ({children}) => {
    
             </StyledMain>
             <StyledFooter>
-                <div><span>푸터단입니다</span></div>
+                <Footer/>
             </StyledFooter>
+            <StyledFooter>
+                <Banner/>
+            </StyledFooter>
+            
         </>
     )
 }
@@ -75,12 +81,12 @@ const StyledNav = styled.div`
 const StyledFooter = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
 
     width: 100%;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 1rem 0;
     background-color: #a0a0a0;
 
     & a {

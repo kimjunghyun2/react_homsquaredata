@@ -17,14 +17,14 @@ export default Banner;
 
 const StyledWrap = styled.div`
     box-sizing: border-box;
-    max-width: 50rem;
+    max-width: 70rem;
     min-width: 18.75rem;
     width: 80%;
     height: 100%;
     margin: 0 auto;
 `
 const BannerStyle = styled.div`
-    display: inline-block;
+    display: flex;
     width: 100%;
     height: 10rem;
     background: url(https://source.unsplash.com/random/1920x1080);
