@@ -11,9 +11,13 @@ const Footer = () => {
         <>
             <StyledFC>
                 <FooterMargin>
-                    <p><span>1푸터컨텐츠 (검색바)</span></p>
+                    <h1><span>1푸터컨텐츠 (검색바)</span></h1>
+                    
+                    <p><span>homsquaredata_예시</span></p>
+                    <p><span>홈스퀘어로</span></p>
+
                     <SearchTamplate>
-                    <p>검색바 위치자리</p>
+                    <Blank/>
                     <div>
                         <label htmlFor="user-email"></label>
                         <input 
@@ -27,17 +31,22 @@ const Footer = () => {
                     />
                     <button>검색</button>
                     </div>
+                    <div style={{
+                        paddingTop: '1rem',
+                        color: '#fff',
+                        float: "left"
+                    }}>
+                        Copyright ©2022 All rights reserved
+                    </div>
                     </SearchTamplate>
                 </FooterMargin>
                 <FooterMargin>
                     <p><span>2푸터컨텐츠</span></p>
-                    <p><span>길이확인길이확인길이확인길이확인길이확인</span></p>
+                    <p style={{color : '#fff'}}>길이확인길이확인길이확인길이확인길이확인</p>
                     
                     
                 </FooterMargin>
             </StyledFC>
-            <Blank />
- 
         </>
 
         
@@ -54,19 +63,18 @@ const FooterMargin = styled.div`
     padding: 1rem 0;
     background-color: #a0a0a0;
 
-
 `
-const FooterMarginR = styled.div`
+const FooterMarginL = styled.div`
     margin: 0 auto;
     padding: 1rem 0;
     background-color: #a0a0a0;
-    float: center;
+    float: left;
 
 `
 
 const StyledFC = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 
     box-sizing: border-box;
     max-width: 60%;
@@ -113,7 +121,7 @@ const SearchTamplate = styled.div`
     max-width: 100rem;
     min-width: 30rem;
     width: 80%;
-    height: 100%;
+    height: 6rem;
     margin: 0 auto;
     text-align: center;
 
@@ -135,7 +143,7 @@ const SearchTamplate = styled.div`
 
     & input::placeholder{
         font-size: 0.875rem;
-        color: #ccc;
+        color: #a0a0a0;
     }
 
     & input:focus{

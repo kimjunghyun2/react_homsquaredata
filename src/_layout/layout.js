@@ -35,10 +35,6 @@ const Layout = ({children}) => {
             <StyledFooter>
                 <Footer/>
             </StyledFooter>
-            <StyledFooter>
-                <Banner/>
-            </StyledFooter>
-            
         </>
     )
 }
@@ -99,6 +95,11 @@ const StyledFooter = styled.div`
     & span {
         font-size: 1.5rem;
         font-weight: 900;
+        color: #fff;
+    }
+
+    & p {
+        width: 80%;
         color: #fff;
     }
 
