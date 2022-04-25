@@ -19,9 +19,9 @@ const Footer = () => {
                     <SearchTamplate>
                     <Blank/>
                     <div>
-                        <label htmlFor="user-email"></label>
+                        <label htmlFor="search-keyword"></label>
                         <input 
-                        name="user-email"
+                        name="search-keyword"
                         type="text"
                         value={keyword}
                         onChange={onChangeKeyword}
