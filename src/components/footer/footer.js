@@ -6,7 +6,7 @@ import { useInput } from "../../hook/useInput";
 
 
 const Footer = () => {
-    const [email, onChangeEmail] = useInput("");
+    const [keyword, onChangeKeyword] = useInput("");
     return(
         <>
             <StyledFC>
@@ -23,8 +23,8 @@ const Footer = () => {
                         <input 
                         name="user-email"
                         type="text"
-                        value={email}
-                        onChange={onChangeEmail}
+                        value={keyword}
+                        onChange={onChangeKeyword}
                         placeholder="사업자번호를 입력해 주세요"
                         autoComplete="on"
                         required
@@ -70,6 +70,11 @@ const FooterMarginL = styled.div`
     background-color: #a0a0a0;
     float: left;
 
+`
+const whiteP = styled.p`
+    padding-top: 1rem;
+    color: '#fff';
+    float: "left"
 `
 
 const StyledFC = styled.div`
