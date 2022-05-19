@@ -10,12 +10,14 @@ import Section4 from "../components/onepage/section4";
 import Section7 from "../components/onepage/section7";
 import Section8 from "../components/onepage/section8";
 
+
 const Home = () => {
     return (
         <Layout>
 
             <Section1/>
             <HomeMain/>
+
             <Banner/>
             <Section2/>
             <Section3/>

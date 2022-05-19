@@ -25,7 +25,7 @@ const Footer = () => {
                         type="text"
                         value={keyword}
                         onChange={onChangeKeyword}
-                        placeholder="사업자번호를 입력해 주세요"
+                        placeholder="검색어를 입력해주세요"
                         autoComplete="on"
                         required
                     />
@@ -42,7 +42,7 @@ const Footer = () => {
                 </FooterMargin>
                 <FooterMargin>
                     <p><span>2푸터컨텐츠</span></p>
-                    <p style={{color : '#fff'}}>길이확인길이확인길이확인길이확인길이확인</p>
+                    <p style={{color : '#fff'}}>추가 내용 입력</p>
                     
                     
                 </FooterMargin>
@@ -59,9 +59,10 @@ const Blank = styled.div`
     min-height: 3rem;
     `
 const FooterMargin = styled.div`
-    margin: 0 auto;
+    margin: 0 ;
     padding: 1rem 0;
     background-color: #a0a0a0;
+    min-width: 30%;
 
 `
 const FooterMarginL = styled.div`
@@ -127,7 +128,7 @@ const SearchTamplate = styled.div`
     min-width: 30rem;
     width: 80%;
     height: 6rem;
-    margin: 0 auto;
+    margin: 0 ;
     text-align: center;
 
     & h1 {

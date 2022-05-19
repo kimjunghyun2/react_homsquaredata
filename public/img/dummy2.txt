@@ -1,0 +1,7 @@
+http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptRent?serviceKey=kGN3LmvLVDIB26IbtOB9522yukFv74%2FVrqMvR2k6fqQftVvcqVj%2FyhIlztF%2BndXlgRCasv4LQd0rklNaCAdMWw%3D%3D&LAWD_CD=11110&DEAL_YMD=201512
+
+=WEBSERVICE("http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptRent?serviceKey" & G3 & "&pageNo=1&numOfRows=3&type=xml&locatadd_nm="& C3)
+
+http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptRent?serviceKey=" & G3 & "&LAWD_CD=" & B6 & "&DEAL_YMD="& C6
+
+http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptRent?serviceKey=" & G3 & "&pageNo=1&numOfRows=10&LAWD_CD=" & B6 & "&DEAL_YMD="&D6
