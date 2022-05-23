@@ -166,7 +166,7 @@ while True :
 
     filename = mkfilename()
     df.to_excel(filename+".xlsx")
-    df.to_excel('C:/Users/skflc/Desktop'+filename +'.xlsx')
+    df.to_excel('C:/Users/skflc/Desktop/'+filename +'.xlsx')
 
 
     # 액셀을 pandas로 열고 쓰고 닫는방식
