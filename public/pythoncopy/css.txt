@@ -1,0 +1,194 @@
+#form_result table.table1 {
+	margin-bottom: 13px;
+}
+
+#form_result table tr {
+	border-right: none;
+	border-left: none;
+	border-top: 1px solid #bababa;
+	border-bottom: 1px solid #bababa;
+}
+#form_result table tr td{
+	border-left: 1px solid #bababa;
+}
+#form_result table tr th {
+	border-left: 1px solid #bababa;
+}
+
+#form_result table th {
+	font-weight: 400;
+	font-size: 1.125em;
+	line-height: 1.2em;
+	letter-spacing: -0.25px;
+	padding:7px 0;
+}
+
+#form_result table th span {
+	font-size:12px;
+}
+
+#form_result table thead th{
+ 	background: #009294;
+	color: #fff;
+	
+}
+
+#form_result table tbody th {
+	background: #f0f0f0;
+	border-left: none;
+}
+
+#form_result table.gdTable tbody th {
+	background: #009294;
+	border-left: none;
+}
+
+
+#form_result table tbody td {
+	font-size: 1.0625em;
+	line-height: 2.94em;
+	text-align: center;
+}
+p.sub_txt {
+	font-size: 0.875em;
+	line-height: 1.4285em;
+	letter-spacing: -0.5px;
+	text-align: right;
+	margin-bottom: 32px;
+}
+
+p.sub_txt>span {
+	color: #ff0000;
+}
+.info_wrap {
+	text-align: right;
+}
+.info_wrap img{
+	cursor: pointer;
+}
+.grade p{
+	display:inline-block;
+	width: 53px;
+	line-height: 53px;
+	border-radius: 10px;
+	font-size: 2.5em;
+	font-weight: 600;
+	color :#fff;
+	text-align: center;
+	vertical-align: middle;
+}
+.grade p.gradeA{
+	background:#4844BA;
+	border:1px #4844BA solid;
+}
+.grade p.gradeB{
+	background:#109BE3;
+	border:1px #109BE3 solid;
+}
+.grade p.gradeC{
+	background:#FCCF16;
+	border:1px #FCCF16 solid;
+}
+.grade p.gradeD{
+	background:#F97D28;
+	border:1px #F97D28 solid;
+}
+.grade p.gradeF{
+	background:#EF1D26;
+	border:1px #F97D28 solid;
+}
+
+#form_result table {
+	width: 600px;
+}
+#form_result {
+	padding: 30px 5px;
+}
+#form_result .table_wrap{
+	overflow-x:scroll;
+}
+.grade p {
+	width: 40px;
+	line-height: 40px;
+}
+#form_result table.table3{
+	width: 800px;
+}
+
+.gdTable { 
+	width: 100%; 
+	margin-bottom: 50px;
+}
+
+.gdTable th{ 
+	font-weight: 400; 
+	background-color: #009294;
+	color: #fff;
+	border-right: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 5px 0;
+}
+.gdTable td{ 
+	text-align: center; 
+	border-right: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 5px 0;
+}
+
+#form_result > div:nth-child(2) > table.gunmul
+
+    font-size: 16px;
+    font-family: "Noto Sans Kr", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+    margin-bottom: 32px;
+
+#form_result > div:nth-child(2) > table.table1
+
+    font-size: 16px;
+    font-family: "Noto Sans Kr", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+    border: none;
+    margin-bottom: 13px;
+
+#form_result > table
+
+
+    font-size: 16px;
+    font-family: "Noto Sans Kr", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+    border: none;
+    margin-bottom: 32px;
+
+#form_result > div:nth-child(4) > table
+
+    font-size: 16px;
+    font-family: "Noto Sans Kr", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+    border: none;
+    margin-bottom: 32px;
+
