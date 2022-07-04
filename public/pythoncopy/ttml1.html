@@ -1,37 +1,431 @@
-"[<div id=""bo_v_con""> <!-- 공동주택 300세대 이상 선택시 {-->
-    <h4 class=""txt_center"" id=""title_report_view"">관리비 간편진단 보고서</h4>
-    <table class=""gunmul"">
-    <tbody>
-    <tr>
-    <th>건물명</th>
-    <td>한국장학재단 서울센터</td>
-    <th>용도</th>
-    <td>공동주택</td>
-    </tr>
-    <tr>
-    <th>법정동 주소</th>
-    <td>서울특별시 중구 장충동1가 50-3번지</td>
-    <th>도로명 주소</th>
-    <td> 서울특별시 중구 장충단로6길 54</td>
-    </tr>
-    <tr>
-    <th>연면적(m²)</th>
-    <td>1,980.55</td>
-    <th>사용승인일</th>
-    <td>2009.07.17</td>
-    </tr>
-    <tr>
-    <th>층수(지상/지하)</th>
-    <td>5/2</td>
-    <th>승강기(승용/비상)</th>
-    <td>1/0</td>
-    </tr>
-    <tr>
-    <th>주차대수(옥내/옥외)</th>
-    <td>10/</td>
-    <th>구조</th>
-    <td>철근콘크리트구조</td>
-    </tr>
-    <tr>
-    <th>기계식주차(옥내/옥외"
-    
+<style>
+    #form_result table{
+       font-size: 16px;
+     font-family: "Noto Sans Kr", sans-serif;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     box-sizing: border-box;
+     width: 100%;
+     border-collapse: collapse;
+     border-spacing: 0 5px;
+     border: none;
+     margin-bottom: 32px;
+   }
+   #form_result table tr {
+     border-right: none;
+     border-left: none;
+     border-top: 1px solid #bababa;
+     border-bottom: 1px solid #bababa;
+ }
+ #form_result table tr td{
+     border-left: 1px solid #bababa;
+ }
+ #form_result table tr th {
+     border-left: 1px solid #bababa;
+ }
+ 
+ #form_result table th {
+     font-weight: 400;
+     font-size: 1.125em;
+     line-height: 1.2em;
+     letter-spacing: -0.25px;
+     padding:7px 0;
+ }
+ 
+ #form_result table th span {
+     font-size:12px;
+ }
+ 
+ #form_result table thead th{
+      background: #009294;
+     color: #fff;
+     
+ }
+ 
+ #form_result table tbody th {
+     background: #f0f0f0;
+     border-left: none;
+ }
+ 
+ #form_result table.gdTable tbody th {
+     background: #009294;
+     border-left: none;
+ }
+ 
+ 
+ #form_result table tbody td {
+     font-size: 1.0625em;
+     line-height: 2.94em;
+     text-align: center;
+ }
+   #form_result table.table1{
+       font-size: 16px;
+     font-family: "Noto Sans Kr", sans-serif;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     box-sizing: border-box;
+     width: 100%;
+     border-collapse: collapse;
+     border-spacing: 0 5px;
+     border: none;
+     margin-bottom: 13px;
+   }
+   #form_result table.gunmul{
+       font-size: 16px;
+     font-family: "Noto Sans Kr", sans-serif;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     box-sizing: border-box;
+     width: 100%;
+     border-spacing: 0;
+     border-collapse: collapse;
+     border: none;
+     margin-bottom: 32px;
+   }
+ 
+ <!-- 별도 추가-->
+   #form_result table.table1 {
+     margin-bottom: 13px;
+ }
+ 
+ #form_result table tr {
+     border-right: none;
+     border-left: none;
+     border-top: 1px solid #bababa;
+     border-bottom: 1px solid #bababa;
+ }
+ #form_result table tr td{
+     border-left: 1px solid #bababa;
+ }
+ #form_result table tr th {
+     border-left: 1px solid #bababa;
+ }
+ 
+ #form_result table th {
+     font-weight: 400;
+     font-size: 1.125em;
+     line-height: 1.2em;
+     letter-spacing: -0.25px;
+     padding:7px 0;
+ }
+ 
+ #form_result table th span {
+     font-size:12px;
+ }
+ 
+ #form_result table thead th{
+      background: #009294;
+     color: #fff;
+     
+ }
+ 
+ #form_result table tbody th {
+     background: #f0f0f0;
+     border-left: none;
+ }
+ 
+ #form_result table.gdTable tbody th {
+     background: #009294;
+     border-left: none;
+ }
+ 
+ 
+ #form_result table tbody td {
+     font-size: 1.0625em;
+     line-height: 2.94em;
+     text-align: center;
+ }
+ p.sub_txt {
+     font-size: 0.875em;
+     line-height: 1.4285em;
+     letter-spacing: -0.5px;
+     text-align: right;
+     margin-bottom: 32px;
+ }
+ 
+ p.sub_txt>span {
+     color: #ff0000;
+ }
+ .info_wrap {
+     text-align: right;
+ }
+ .info_wrap img{
+     cursor: pointer;
+ }
+ .grade p{
+     display:inline-block;
+     width: 53px;
+     line-height: 53px;
+     border-radius: 10px;
+     font-size: 2.5em;
+     font-weight: 600;
+     color :#fff;
+     text-align: center;
+     vertical-align: middle;
+ }
+ .grade p.gradeA{
+     background:#4844BA;
+     border:1px #4844BA solid;
+ }
+ .grade p.gradeB{
+     background:#109BE3;
+     border:1px #109BE3 solid;
+ }
+ .grade p.gradeC{
+     background:#FCCF16;
+     border:1px #FCCF16 solid;
+ }
+ .grade p.gradeD{
+     background:#F97D28;
+     border:1px #F97D28 solid;
+ }
+ .grade p.gradeF{
+     background:#EF1D26;
+     border:1px #F97D28 solid;
+ }
+ 
+ #form_result table {
+     width: 600px;
+ }
+ #form_result {
+     padding: 30px 5px;
+ }
+ #form_result .table_wrap{
+     overflow-x:scroll;
+ }
+ .grade p {
+     width: 40px;
+     line-height: 40px;
+ }
+ #form_result table.table3{
+     width: 800px;
+ }
+ 
+ .gdTable { 
+     width: 100%; 
+     margin-bottom: 50px;
+ }
+ #bo_v_con > div > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(1) > p.grade.gradeB
+ #form_result > div:nth-child(2) > table.table1 > tbody > tr:nth-child(1) > th > p:nth-child(1)
+ #bo_v_con > div > table:nth-child(1) > tbody > tr:nth-child(1) > td:nth-child(1) > p:nth-child(1)
+ #bo_v_con > div > table:nth-child(1)
+ #form_result > div:nth-child(2) > table.table1
+ #form_result > div:nth-child(2)
+ #bo_v_con > table.gdTable > tbody > tr:nth-child(1) > th:nth-child(1)
+ #bo_v_con > div > table:nth-child(1) > thead > tr > th:nth-child(1)
+ #bo_v_con > div
+ #bo_v_con > section > article > div.txt_box > p
+ #content > section > article > form > section > article > div.txt_box > p
+ #bo_v_con > table:nth-child(4) > tbody > tr:nth-child(1) > th
+ #bo_v_con > table:nth-child(4) > tbody > tr:nth-child(2) > th
+ 
+ .clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+ .grade p {
+    display: inline-block;
+    width: 53px;
+    line-height: 53px;
+    border-radius: 10px;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+ 
+ .gdTable th{ 
+     font-weight: 400; 
+     background-color: #009294;
+     color: #fff;
+     border-right: 1px solid #e1e1e1;
+     border-bottom: 1px solid #e1e1e1;
+     padding: 5px 0;
+ }
+ .gdTable td{ 
+     text-align: center; 
+     border-right: 1px solid #e1e1e1;
+     border-bottom: 1px solid #e1e1e1;
+     padding: 5px 0;
+ }
+
+   
+ <!-- 이상 정밀진단 스타일-->
+   
+   
+ </style>
+ 
+ <style>
+     .gdTable {
+     width: 100%;
+     margin-bottom: 50px;
+ }
+ 
+ .gdTable th{
+     font-weight: 400;
+     background-color: #009294;
+     color: #fff;
+     border-right: 1px solid #e1e1e1;
+     border-bottom: 1px solid #e1e1e1;
+     padding: 5px 0;
+ }
+ .gdTable td{
+     text-align: center;
+     border-right: 1px solid #e1e1e1;
+     border-bottom: 1px solid #e1e1e1;
+     padding: 5px 0;
+ }
+ 
+ .myresult .result,section.service1_result.simple .result {
+     float: left;
+     width: 50%;
+     border-top: 1px solid #bababa;
+ }
+ .myresult .result:first-child,section.service1_result.simple .result:first-child{
+     border-left: 1px solid #bababa;
+ }
+ .myresult .result thead th,section.service1_result .result thead th{
+     background: #009294;
+   color: #fff;
+   font-weight: 400;
+   font-size: 1.125em;
+   line-height: 3.055em;
+   letter-spacing: -0.25px;
+   border-right: 1px solid #e1e1e1;
+ }
+ .myresult .result td,section.service1_result .result td{
+     border-right: 1px solid #bababa;
+     border-bottom: 1px solid #bababa;
+     padding: 7px 0;
+     text-align: center;
+     font-size: 1.0625em;
+     line-height: 2.94em;
+     text-align: center;
+ }
+ .myresult .result p.grade,
+ section.service1_result .result p.grade {
+     font-size: 2.5em;
+     display: inline-block;
+ }
+ section.service1_result h6 {
+     margin: 60px 0 30px;
+     font-size: 1.25em;
+     text-align: center;
+     color: #333;
+ }
+ section.service1_result h6 span{
+     color: #009294;
+ }
+ section.service1_result h6::before{
+     display: block;
+     width: 30px;
+     height: 3px;
+     background: #009294;
+     margin: 20px auto;
+     content:"";
+ } 
+   
+ <!-- table2부분 section.menu2_4 #form_table 제외-->
+ #bo_v_con table.table2 {
+     float: left;
+     width: 70%;
+ }
+ </style>
+ <style>
+ <!--#form_table .table2 {
+     margin: 20px 0;
+ }
+ -->
+ #bo_v_con table.table2 thead td{
+     background: #009294;
+     color: #fff;
+ 
+     font-weight: 400;
+     font-size: 1.125em;
+     line-height: 3.055em;
+     letter-spacing: -0.25px;
+ }
+ 
+ #bo_v_con table.table2 thead th.empty{
+     background: #fff;
+ }
+ #bo_v_con table.table2 tbody td {
+     padding: 0;
+ }
+ #bo_v_con table.table2 input {
+     width: 85%;
+     height: 57px;
+     line-height: 57px;
+     border: none;
+     text-align: center;
+ }
+ 
+ #bo_v_con table.table2 input::placeholder{
+     line-height: 3.055em;
+     color: #e1e1e1;
+ }  
+ #bo_v_con table {
+     width: 100%;
+     border-top: 1px solid #efefef;
+     border-left: 1px solid #efefef;
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+   
+ <!-- #form result 부분-->
+ #form_result table {
+     border: none;
+     margin-bottom: 32px;
+ }
+ .tbl_wrap table {
+     width: 100%;
+     border-collapse: collapse;
+     border-spacing: 0 5px;
+     border: 1px solid #ccc;
+ }  
+ #form_result table tbody td {
+     font-size: 1.0625em;
+     line-height: 2.94em;
+     text-align: center;
+ }
+ #form_result table tr td {
+     border-left: 1px solid #bababa;
+ }
+ #form_result table tbody th {
+     background: #f0f0f0;
+     border-left: none;
+ }
+ #form_result table th {
+     font-weight: 400;
+     font-size: 1.125em;
+     line-height: 1.2em;
+     letter-spacing: -0.25px;
+     padding: 7px 0;
+ }  
+ 
+ 
+ #form_result table img {
+     vertical-align: middle;
+       width : 100px;
+     height : 100px;
+     font-size: 1em;
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ 
+ .cate {
+     display: inline-block;
+     margin-top: 7px;
+     color: rgb(255, 255, 255);
+     font-size: 11px;
+     padding: 3px 5px;
+     border-radius: 3px;
+     background: rgb(0, 187, 180);
+ }  
+ </style>
