@@ -1,0 +1,150 @@
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "13ad8e15fb70020";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+
+<style>
+#form_reply, .reply_write{display:none !important;}
+body {padding-bottom: 140px;}
+</style>
+
+
+<script>
+$(function(){
+$('#request_content').each(function(){
+CKEDITOR.instances.request_content.setData('<p><span style= "color: #afafaf;">상세 내용을 작성해 주세요</span></p>');
+})
+})
+$(function(){
+$('#memo_content').each(function(){
+CKEDITOR.instances.memo_content.setData('<p><span style= "color: #afafaf;">관리자와 본인만 보이는 관리 내용입니다.</span></p>');
+})
+})
+</script>
+
+
+<style>
+@media(max-width:769px){
+iframe{
+width:100% !important;
+}
+}
+#general_hp{display:none !important;}
+@media(max-width:1000px){
+img.csmall{
+width: 100%;
+height: 100%;
+max-height: 284px;
+}
+div.cmid{
+width: 100%;
+height: auto;
+}
+img.cmid{
+width: 100%;
+height: 100%;
+max-height: 370px;
+}
+img.cbig{
+width: 100%;
+height: 100%;
+max-height: 427px;;
+}
+footer.footer.no_print.padder-v.color_f_b{
+word-break: keep-all;
+}
+}
+@media(max-width:768px){
+    
+        img.csmall{
+            width: 100%;
+            height: 100%;
+            max-width: 768px;
+            max-height: 220px;
+        }
+    
+        div.cmid{
+            width: auto;
+            height: auto;
+            max-width: 768px;
+            max-height: 284px;
+        }
+    
+        img.cmid{
+            width: 100%;
+            height: 100%;
+            max-width: 768px;
+            max-height: 284px;
+        }
+
+        img.cbig{
+            width: 100%;
+            height: 100%;
+            max-width: 768px;
+            max-height: 328px;
+        }
+}
+@media(max-width:480px){
+    
+        img.csmall{
+            width: 100%;
+            height: 100%;
+            max-width: 480px;
+            max-height: 140px;
+        }
+    
+        div.cmid{
+            width: auto;
+            height: auto;
+            max-width: 480px;
+            max-height: 175px;
+        }
+    
+        img.cmid{
+            width: 100%;
+            height: 100%;
+            max-width: 480px;
+            max-height: 175px;
+        }
+
+        img.cbig{
+            width: 100%;
+            height: 100%;
+            max-width: 480px;
+            max-height: 205px;
+        }
+}
+
+</style>
+<style>
+div.moving{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0!important;
+    display: block;
+    background: url('https://cdn.imweb.me/upload/S2022062041fb685b3a7cc/9dfa695d81261.png') center 0  / 600px repeat-y;
+    background-size: 100%;
+    animation: movebg 3000s linear infinite;
+    box-shadow: 3px 3px 20px -7px grey;
+}
+
+.moving .moving_shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #fff0, #fff);
+}
+
+@keyframes movebg {
+       0%  { background-position:  center 0; }
+       100%  { background-position:  center  -50000px; }
+}
+</style>

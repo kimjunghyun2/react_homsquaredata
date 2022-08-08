@@ -1,0 +1,39 @@
+<div class="col-lg-12">
+    <img src="images/chart_top.png" alt="" class="img-fluid w-100">
+    <div class="img-fluid moving">
+        <div class="moving_shadow"></div>
+    </div>
+</div>
+
+0!important
+.moving {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0!important;
+    display: block;
+    background: url('./images/chart_bottom1.png') center 0  / 600px repeat-y;
+    background-size: 100%;
+    animation: movebg 600s linear infinite;
+    box-shadow: 3px 3px 20px -7px grey;
+}
+animation-duration: 600s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: none;
+animation-play-state: running;
+animation-name: movebg;
+
+
+.moving .moving_shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #fff0, #fff);
+    text-align: center;
+}
