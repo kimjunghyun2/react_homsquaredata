@@ -1,0 +1,1141 @@
+<div class="row m-t-lg m-b">
+    <div class="col-sm-6 ">
+        <div class="main_quick_box box1" style=" ">
+
+            <h3><span class="main_text_color">번호</span>를 남기시면</h3><h3 class="m-t-xs">상담해 드리겠습니다!</h3>									
+            
+            <p class="text-muted">
+                원하시는 매물을 못찾으셨나요?<br>번호를 남겨주시면 확인후<br>신속히 답변 드리겠습니다.									</p>
+            <div class="form-inline m-t">
+                <form method="post" action="/call/insert_action" id="form_call_main" novalidate="novalidate">
+                    <div class="m-b-sm">
+                        <textarea class="form-control quick_content_box" style="width: 250px; resize: none;" name="content" rows="2" placeholder="내용"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control quick_contact_box" name="contact" placeholder="휴대폰">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-default main_color quick_send_btn">
+                                <i class="fa fa-phone"></i> 보내기													</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <script>
+                $(function(){
+                    $("#form_call_main").validate({
+                        rules: {
+                            contact: {
+                                required: true
+                            },
+                        }
+                    })
+                    $('#form_call_main').ajaxForm({
+                        beforeSubmit: function(){ 
+                        }, success: function(){
+                            script_call();
+                            alert('등록 되었습니다. 담당자 확인후 연락을 드리겠습니다.');
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+                                                                                            <div class="col-sm-6">
+            <div class="main_quick_box box2 main_request_zone">
+                <div id="request-container" style="overflow: hidden; position: relative; height: 260px;">
+                    <ul class="w100" style="position: absolute; margin: 0px; padding: 0px; top: 0px;">
+                            <li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트매매의뢰																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0109***989)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    단기임대 3개월 가능한 매물																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0106***809)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    집구해요																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            허**																	<small class="hidden-xs">(0107***701)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0108***596)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    올수리																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0109***604)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    전세																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0104***128)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    부평 산곡동 신일해피트리 전세																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            최**																	<small class="hidden-xs">(0102***277)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-info">상담중</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            꿈**																	<small class="hidden-xs">(0103***857)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-info">상담중</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            꿈**																	<small class="hidden-xs">(0103***857)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-info">상담중</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    가락우창아파트 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0109***992)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    가락우창아파트 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0109***992)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-info">상담중</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    신봉동 동일하이빌 4단지 19층 (..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            최**																	<small class="hidden-xs">(0104***852)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-info">상담중</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    신봉동 동일하이빌 4단지 19층 (..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            최**																	<small class="hidden-xs">(0104***852)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    7호선 사가정역 도보7분거리 수리된..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            문**																	<small class="hidden-xs">(0106***722)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    동탄2신도시 그란비아스타 3층																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            송**																	<small class="hidden-xs">(0104***113)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    내포 파리에르상가 분양권  매도합니..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            류**																	<small class="hidden-xs">(0103***510)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0109***259)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    금광금빛그랑메종 입주권(현) 팔아요																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            차**																	<small class="hidden-xs">(0107***123, 01022654712)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아산 모종동 모종케슬어울림 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0105***737)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    삼청동2층독채																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0103***949)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    현 상태는 입주권이지만 10월말 입..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            차**																	<small class="hidden-xs">(0107***123)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    당하동넓은투룸																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            강**																	<small class="hidden-xs">(0106***077)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    의정부 신축아파트 팔아요																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            황**																	<small class="hidden-xs">(0104***097)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    전세집 구합니다. 																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            황**																	<small class="hidden-xs">(0105***704)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    전세) 후곡마을 8단지 59평, 오..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0105***227)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    단기임대 문의																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            백**																	<small class="hidden-xs">(010-***-2188)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아산 모종동 모종케슬어울림 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0105***737)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아산 모종동 모종케슬어울림 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0105***737)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    광교 자연앤힐스테이트 월세																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(010-***-0631)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    이마트 트레이더스 옆 아파트 월세 ..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            정**																	<small class="hidden-xs">(010-***-5936)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    포스트 센트로드 송도 																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0105***469)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    석수역도보3분 신축 관악산 등산로입..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(010-***-3288)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    석수역 도보 10분, 숲세권, 아침..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(010-***-3288)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            차**																	<small class="hidden-xs">(0109***204)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아산 모종동 모종케슬어울림 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0105***737)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    반포더샵리버파크 전세																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            홍**																	<small class="hidden-xs">(0103***237)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    미사한신 아파트																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            홍**																	<small class="hidden-xs">(0103***237)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0108***120)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    화곡, 우장산, 가양 근처 저렴한 ..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0108***440)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    사무실 통임대																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            송**																	<small class="hidden-xs">(0105***847)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    타워아이즈빌 오피스텔 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            윤**																	<small class="hidden-xs">(0109***129)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    전세																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            홍**																	<small class="hidden-xs">(0106***009)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    상가 사무실 임대 																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            최**																	<small class="hidden-xs">(0103***421)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    신공덕동 삼성래미안1차아파트 전세 ..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0103***076)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    금정역 힐스테이트 오피스텔84																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0104***343)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    입주가능귀한물건,자연친화적인 6단지																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(010-***-9461)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            설**																	<small class="hidden-xs">(0103***994)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    성저1단지 동익																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            문**																	<small class="hidden-xs">(0108***727)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    뷰가좋은 로얄동																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            주**																	<small class="hidden-xs">(0106***571)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    분당구 야탑동 탑마을 벽산아파트 2..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            벽**																	<small class="hidden-xs">(0105***362)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    종로구 무악동 현대아파트, 롯데캐슬..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            임**																	<small class="hidden-xs">(0102***441)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    매도의뢰																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0104***495)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0107***985)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    총신대입구역(이수역) 도보 5분이내..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            고**																	<small class="hidden-xs">(010-***-8749)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    도램마을 19단지 매매  원수산전망																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            차**																	<small class="hidden-xs">(0109***204)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    구축 주택 팔고 싶어요																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(01.9***2645)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    전세입주																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            연**																	<small class="hidden-xs">(0105***736)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0108***517)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    거실,안방에서는 바다조망, 작은방과..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0106***370)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    (매매) 경기도 의왕시 인덕원센트럴..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            홍**																	<small class="hidden-xs">(0105***287)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    기흥역힐스테이트 31평 초역세권급매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            유**																	<small class="hidden-xs">(0104***322)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    상가 분할 임대 임차인 구합니다. ..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0108***763)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    다가구주택																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            정**																	<small class="hidden-xs">(010-***-9067)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    천왕연지타운 1단지 아파트 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0103***859)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    고덕 아르테온 별동 전세																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            고**																	<small class="hidden-xs">(010-***-9612)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    파격 조건으로 상가 매각 합니다																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            강**																	<small class="hidden-xs">(0108***808)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            민**																	<small class="hidden-xs">(0104***180)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트 매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            민**																	<small class="hidden-xs">(0104***180)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    남양주 호평동 아파트 급매물입니다...																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            유**																	<small class="hidden-xs">(0105***676)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(010.***.2645)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                                                                                                                                                        </div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(010.***.2645)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    강남/서초/송파 오피스텔 																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            나**																	<small class="hidden-xs">(0102***519)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    부천역 5분  거리 상가 1층, 1..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0108***328)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    빌라 원룸 전세 의뢰 																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0108***328)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    응암역5분거리 조용하고 깨끗한 빌라																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(0104***820)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    기흥역 힐스테이트 31평 매매합니다..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            유**																	<small class="hidden-xs">(010-***-7322)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트매매																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(0103***859)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    올 수리한 넓고 깨끗한 29평 아파..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            신**																	<small class="hidden-xs">(010 *** 0627)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    [법인] 청주개신주공1단지 102동..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            (**																	<small class="hidden-xs">(010-***-4334)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    하남 백조현대 106동 404호 남..																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            이**																	<small class="hidden-xs">(010-***-4334)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    아파트 매매 의뢰																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            박**																	<small class="hidden-xs">(0107***288)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    연수 우성2차 24평 매도합니다.																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            안**																	<small class="hidden-xs">(0104***947)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li style="height: 52px; margin: 0px; padding: 0px; display: list-item;">
+                                <div class="panel panel-body b-b" style="margin:0px">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2">
+                                                                                                                    <label class="label label-default">상담완료</label>
+                                                                                                            </div>
+                                        <div class="col-xs-6 col-sm-6">
+                                                                                                                    삼양빌라 201호 월세 놓음																																	</div>
+                                        <div class="col-xs-3 col-sm-4">
+                                            김**																	<small class="hidden-xs">(010-***-4141)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li></ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+            $('#request-container').vTicker({ 
+                speed: 500,
+                pause: 3000,
+                animation: 'fade',
+                mousePause: false,
+                                                            showItems: 5
+                                                    });
+        })
+        </script>
+                            </div>

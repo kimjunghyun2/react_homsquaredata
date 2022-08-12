@@ -38,14 +38,6 @@ def mkdataframe(url): #url로 호출한 api pandas dataframe로 받기
 
     return df
 
-def printarea():
-    area = float(input("면적을 숫자로만 입력하세요 (m2) : "))
-    areas = area - 3.3
-    areab = area + 3.3
-    df['전용면적'] = df['전용면적'].astype(float)
-    df1 = df.loc[(df['전용면적'] >= (areas)) & (df['전용면적'] <= (areab))]
-    print(df1)
-    df1.to_excel('C:/Users/skflc/Desktop/0523result/' + filename + ' filtered.xlsx')
 
 while True :
     try:

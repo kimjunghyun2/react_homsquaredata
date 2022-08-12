@@ -38,14 +38,6 @@ def mkdataframe(url): #url로 호출한 api pandas dataframe로 받기
 
     return df
 
-def printarea():
-    area = float(input("면적을 숫자로만 입력하세요 (m2) : "))
-    areas = area - 3.3
-    areab = area + 3.3
-    df['전용면적'] = df['전용면적'].astype(float)
-    df1 = df.loc[(df['전용면적'] >= (areas)) & (df['전용면적'] <= (areab))]
-    print(df1)
-    df1.to_excel('C:/Users/skflc/Desktop/0523result/' + filename + ' filtered.xlsx')
 
 while True :
     try:
@@ -86,9 +78,6 @@ while True :
         ef = df[df['상태명'] =='정상']
         ef = ef.drop(['부동산개발업등록번호', '고유번호', '법정동코드', '대장구분코드', '대장구분명', '도로명주소코드', '도로명주소지하코드', '도로명주소본번', '도로명주소부번', '도로명주소읍면동일련번호', '사무소일련번호', '사무소구분코드', '사무소소유구분코드', '상태코드', '데이터기준일자'])
         ef.to_excel('C:/Users/skflc/Desktop/0527result/'+filename +' filtered.xlsx')
-        #if house == '1' and sale == '1' :
-        #    print("아파트 매매입니다")
-        #    printarea()
 
         #else :
         #    print("그외의 경우 입니다 3초뒤 처음으로 돌아갑니다.")
